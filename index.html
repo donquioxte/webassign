@@ -14,6 +14,42 @@
             line-height: 1.7;
             background: #fafaf8;
         }
+        h1{
+           font-size: 0.85rem;
+           text-transform: uppercase;
+           letter-spacing: 0.1em;
+           color: #888;
+           margin-bottom: 0.4rem; 
+        }
+        h2 {
+            font-size: 1.75rem;
+            font-weight: normal;
+            margin-top: 0;
+            margin-bottom: 1.25rem;
+            color: #111;
+        }
+        p {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+        ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            counter-reset: topic-counter;
+        }
+        ol li {
+            counter-increment: topic-counter;
+            border-top: 1px solid #e5e5e5;
+            padding: 0.75rem 0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        ol li:last-child {
+            border-bottom: 1px solid #e5e5e5;
+        }
     </style>
 </head>
 <body>
