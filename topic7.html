@@ -3,7 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conclusion</title>
+        <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            max-width: 640px;
+            margin: 60px auto;
+            padding: 0 24px;
+            color: #222;
+            line-height: 1.7;
+            background: #fafaf8;
+        }
+        h1{
+           font-size: 0.85rem;
+           text-transform: uppercase;
+           letter-spacing: 0.1em;
+           color: #888;
+           margin-bottom: 0.4rem; 
+        }
+        h2 {
+            font-size: 1.75rem;
+            font-weight: normal;
+            margin-top: 0;
+            margin-bottom: 1.25rem;
+            color: #111;
+        }
+        p {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+        ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            counter-reset: topic-counter;
+        }
+        ol li {
+            counter-increment: topic-counter;
+            border-top: 1px solid #e5e5e5;
+            padding: 0.75rem 0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }  
+        ol li:last-child {
+            border-bottom: 1px solid #e5e5e5;
+        }
+        ol lo::before {
+            content: counter(topic-counter, decimal-leading-zero);
+            font-size: 0.75rem;
+            color: #aaa;
+            min-width: 24px;
+        }
+        ol li a {
+            color: #000;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
             <ol>
